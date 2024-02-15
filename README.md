@@ -1,14 +1,17 @@
-# Imputation
-Fill in Missing Values
+# Text Imputation for Tabular Data
+This repository provides a tool to impute missing textual data in your datasets.
 
-Create a conda environment with Python=3.11 and install the following: (with the correct cuda version)
+Create a conda environment with Python=3.11 and install the following: (with the correct cuda version)  
     conda install pytorch torchtext torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
-Install other dependencies in requirements.txt:
+Install other dependencies in requirements.txt:  
     pip install -r requirements.txt
 
-And install the package through pip:
-    pip install -i https://test.pypi.org/simple/ TTITA==0.1.0
+And install the package through pip:  
+    pip install -i https://test.pypi.org/simple/TTITA==0.1.0
+
+
+
 
 Copyright 2024
 
