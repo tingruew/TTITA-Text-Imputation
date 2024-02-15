@@ -1,6 +1,0 @@
-Metadata-Version: 2.1
-Name: TITTA
-Version: 0.1.0
-Summary: Python package for textual data imputation
-Classifier: Programming Language :: Python :: 3
-License-File: LICENSE
