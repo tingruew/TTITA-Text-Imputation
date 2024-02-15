@@ -2,13 +2,13 @@
 Fill in Missing Values
 
 Create a conda environment with Python=3.11 and install the following: (with the correct cuda version)
+    conda install pytorch torchtext torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
-conda install pytorch torchtext torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+Install other dependencies in requirements.txt:
+    pip install -r requirements.txt
 
-Then, install other dependencies in requirements.txt:
-
-pip install -r requirements.txt
-
+And install the package through pip:
+    pip install -i https://test.pypi.org/simple/ TTITA==0.1.0
 
 Copyright 2024
 
