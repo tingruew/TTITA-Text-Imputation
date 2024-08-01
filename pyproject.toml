@@ -1,5 +1,0 @@
-[project]
-name = 'TTITA'
-version='0.1.0'
-description='Python package for textual data imputation'
-classifiers=['Programming Language :: Python :: 3']
