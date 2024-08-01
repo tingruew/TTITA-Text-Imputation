@@ -43,5 +43,5 @@ imputer.fit(train)
 # Impute with the fitted model (test is a Pandas Dataframe containing the same columns)
 test['predicted_review_text'] = imputer.predict(test)
 ```
-See [demo.py](demo.py) for a more concrete example on car reviews
+See [demo.py](code/demo.py) for a more concrete example on car reviews
 
