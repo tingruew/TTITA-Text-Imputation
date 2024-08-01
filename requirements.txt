@@ -3,5 +3,3 @@ numpy==1.26.4
 scikit-learn==1.5.0
 rotary-embedding-torch
 tqdm
-torchtext==0.17.0
-torch==2.2.0
