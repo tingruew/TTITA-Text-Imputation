@@ -34,7 +34,6 @@ class RMSNorm(torch.nn.Module):
         self.d = d
         self.p = p
         self.bias = bias
-
         self.scale = torch.nn.Parameter(torch.ones(d))
         self.register_parameter("scale", self.scale)
 
@@ -49,7 +48,6 @@ class RMSNorm(torch.nn.Module):
         else:
             partial_size = int(self.d * self.p)
             partial_x, _ = torch.split(x, [partial_size, self.d - partial_size], dim=-1)
-
             norm_x = partial_x.norm(2, dim=-1, keepdim=True)
             d_x = partial_size
 
@@ -91,8 +89,8 @@ class MultiHeadAttention(torch.nn.Module):
         scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.k)
         if mask is not None:
             scores = scores.masked_fill(mask == 0, -1e9)
-        attn_probs = torch.softmax(scores, dim=-1)
-        output = torch.matmul(attn_probs, V)
+        probs = torch.softmax(scores, dim=-1)
+        output = torch.matmul(probs, V)
         return output
         
     def separate_heads(self, x):
