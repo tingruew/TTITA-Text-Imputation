@@ -164,8 +164,8 @@ class Transformer(torch.nn.Module):
         self.decoder = torch.nn.ModuleList([DecoderLayer(embed, heads, embed_dim, 0.1) for _ in range(6)])
 
         self.dropout = torch.nn.Dropout(0.1)
+        self.dropout_last = torch.nn.Dropout(0.1)
         self.embedding = torch.nn.Embedding(vocab_size, embed)
-        self.norm_last = RMSNorm(embed)
         self.fc = torch.nn.Linear(embed, vocab_size)
         self.embed = embed
 
@@ -204,8 +204,8 @@ class Transformer(torch.nn.Module):
         
         for dec_layer in self.decoder:
             embeddings = dec_layer(embeddings, x, tgt_mask)
-
-        embeddings = self.norm_last(embeddings)
+            
+        embeddings = self.dropout_last(embeddings)
         output = self.fc(embeddings)
         return output
     
