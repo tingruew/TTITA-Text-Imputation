@@ -30,6 +30,7 @@ Take the toy review dataset below for example
 Code to impute the Review Text column
 ```
 from impute import *
+
 # Initialize the imputation model
 imputer = Imputer({'Rating':'int',
                    'Reviewer ID':'cat',
