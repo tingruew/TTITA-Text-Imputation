@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-src/TTITA.egg-info/PKG-INFO
-src/TTITA.egg-info/SOURCES.txt
-src/TTITA.egg-info/dependency_links.txt
-src/TTITA.egg-info/top_level.txt
-src/TTITA_testing/__init__.py
-src/TTITA_testing/impute.py
