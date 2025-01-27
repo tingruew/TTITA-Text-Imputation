@@ -1,7 +1,9 @@
 # Text Imputation for Tabular Data
-A tool for imputing missing textual data in your datasets
+A tool for imputing missing textual data in any tabular dataset
 
 From the paper: [Table Transformers for imputing textual attributes](https://arxiv.org/pdf/2408.02128)
+
+![](image.png)
 
 ```Bibtex
 @article{wei2024table,
