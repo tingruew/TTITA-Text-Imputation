@@ -1,5 +1,20 @@
 # Text Imputation for Tabular Data
-This repository provides a tool to impute missing textual data in your datasets.
+A tool for imputing missing textual data in your datasets
+
+From the paper: [Table Transformers for imputing textual attributes](https://arxiv.org/pdf/2408.02128)
+
+```Bibtex
+@article{wei2024table,
+  title={Table Transformers for imputing textual attributes},
+  author={Wei, Ting-Ruen and Wang, Yuan and Inoue, Yoshitaka and Wu, Hsin-Tai and Fang, Yi},
+  journal={Pattern Recognition Letters},
+  volume={186},
+  pages={258--264},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
 
 ## Setup
 Create a conda environment with Python=3.11:
